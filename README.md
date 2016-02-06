@@ -1,2 +1,2 @@
 # DinosaurBoneTool
-Dinosaur Bone Project Repo for 1325
+Dinosaur Bone Buyer/Seller Project Repo for 1325
