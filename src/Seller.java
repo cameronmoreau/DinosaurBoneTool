@@ -69,18 +69,17 @@ public class Seller {
         int sum=0;
         for(int i=0; i<20;i++){
             for(int j=0;j<60;j++){
-                sum+=1;
                 Coordinate tempCoord = (Coordinate)coordList.get(sum);
                 int[] coordVals = Coordinate.getVals(tempCoord);
                 if(coordVals[2]==0)
                     System.out.print(".");
                 else if(coordVals[2]==1)
                     System.out.print("*");
+                sum+=1;
             }
             System.out.println("");
         }
-
-
+        menu();
     }
 
 
