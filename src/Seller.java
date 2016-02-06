@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Seller {
 
     Scanner input = new Scanner(System.in);
+    ArrayList coordList = new ArrayList();
 
     public void menu(){
         int choice=0;
@@ -32,7 +33,7 @@ public class Seller {
             case 2:
                 System.out.println("Input is 2\n");break;
             case 3:
-                System.out.println("Input is 3\n");break;
+                displayMap();break;
             case 4:
                 System.out.println("Input is 4\n");break;
             case 5:
@@ -43,8 +44,9 @@ public class Seller {
     }
 
     public void loadMap(){
-        ArrayList coordList = new ArrayList();
+
         File mapFile = new File("Map.txt");
+
         try{
             Scanner fileIn = new Scanner(mapFile);
             while(fileIn.hasNext()){
@@ -58,8 +60,27 @@ public class Seller {
         catch (IOException e){
             System.out.println("File not Found");
         }
+
         System.out.println("Map Loaded\n");
         menu();
+    }
+
+    public void displayMap(){
+        int sum=0;
+        for(int i=0; i<20;i++){
+            for(int j=0;j<60;j++){
+                sum+=1;
+                Coordinate tempCoord = (Coordinate)coordList.get(sum);
+                int[] coordVals = Coordinate.getVals(tempCoord);
+                if(coordVals[2]==0)
+                    System.out.print(".");
+                else if(coordVals[2]==1)
+                    System.out.print("*");
+            }
+            System.out.println("");
+        }
+
+
     }
 
 

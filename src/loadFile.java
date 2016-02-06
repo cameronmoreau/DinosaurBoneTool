@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package seller;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -22,7 +21,7 @@ import java.util.Scanner;
 public class loadFile{
 
 
-    public static Boolean load(){
+    public Boolean load(){
 
         //Creates a file object
 
@@ -33,7 +32,7 @@ public class loadFile{
         }
 
         else{
-            Seller.menu();
+            //Seller.menu();
         }
 
         return true;
@@ -48,8 +47,8 @@ public class loadFile{
 
 
 
-        try(Scanner input = new Scanner(fileIn)){
-
+        try{
+            Scanner input = new Scanner(fileIn);
             //input.useDelimiter(",");
 
             while(input.hasNext()){
@@ -75,7 +74,7 @@ public class loadFile{
         }
 
         //System.out.print(list);
-        bones.createBone(list);
+        //bones.createBone(list);
         //return strs;
 
     }

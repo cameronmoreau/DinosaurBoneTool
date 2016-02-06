@@ -10,11 +10,11 @@ public class Coordinate {
         longitudeMap = Integer.parseInt(newCoordData[0]);
         latitudeMap = Integer.parseInt(newCoordData[1]);
         landOrWaterMap = Integer.parseInt(newCoordData[2]);
-        System.out.println(longitudeMap+ " " + latitudeMap + " " + landOrWaterMap);
     }
 
-
-
-
+    public static int[] getVals(Coordinate temp){
+        int[] coord = {temp.longitudeMap, temp.latitudeMap, temp.landOrWaterMap};
+        return coord;
+    }
 
 }
