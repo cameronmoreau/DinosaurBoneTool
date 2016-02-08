@@ -1,7 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * @author KoltenSturgill
+ *
  */
 
 import java.io.*;
@@ -9,13 +8,6 @@ import java.util.ArrayList;
 import static java.util.Collections.list;
 import java.util.Formatter;
 import java.util.Scanner;
-
-
-/**
- *
- * @author KoltenSturgill
- */
-
 
 
 public class loadFile{

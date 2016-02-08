@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac1dfa78-be6e-4db1-bc43-50f600b0cada" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Seller.java" afterPath="$PROJECT_DIR$/src/Seller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bones.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/loadFile.java" afterPath="$PROJECT_DIR$/src/loadFile.java" />
     </list>
     <ignored path="DinosaurBoneTool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,10 +67,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Seller.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Seller.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Seller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="29" selection-start="2533" selection-end="2533" vertical-scroll-proportion="-19.444445" vertical-offset="765" max-vertical-offset="1515">
+            <state line="14" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1515">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -82,7 +82,7 @@
       <file leaf-file-name="Map.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Map.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="6" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="1785" max-vertical-offset="18090">
+            <state line="137" column="6" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="18090">
               <folding />
             </state>
           </provider>
@@ -100,8 +100,22 @@
       <file leaf-file-name="loadFile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/loadFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
-              <folding />
+            <state line="8" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1290">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bones.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bones.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="25" selection-start="119" selection-end="119" vertical-scroll-proportion="0.16509435" vertical-offset="0" max-vertical-offset="1380">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,17 +133,18 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/loadFile.java" />
         <option value="$PROJECT_DIR$/src/Coordinate.java" />
         <option value="$PROJECT_DIR$/src/Seller.java" />
+        <option value="$PROJECT_DIR$/src/loadFile.java" />
+        <option value="$PROJECT_DIR$/src/bones.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="59" />
-    <option name="y" value="-6" />
+    <option name="y" value="24" />
     <option name="width" value="1307" />
-    <option name="height" value="774" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -157,7 +172,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -193,6 +207,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,13 +388,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="-6" width="1307" height="774" extended-state="6" />
-    <editor active="false" />
+    <frame x="59" y="24" width="1307" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7174556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -395,6 +409,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7174556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -424,6 +439,39 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Seller.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="29" selection-start="2533" selection-end="2533" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1515">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="6" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="18090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="81" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1410">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Seller.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="15" selection-start="2343" selection-end="2343" vertical-scroll-proportion="0.0" vertical-offset="356" max-vertical-offset="1425">
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -449,7 +497,9 @@
     <entry file="file://$PROJECT_DIR$/src/loadFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="579" max-vertical-offset="1410">
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -480,7 +530,9 @@
     <entry file="file://$PROJECT_DIR$/src/loadFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="579" max-vertical-offset="1410">
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -489,10 +541,13 @@
         <state line="3" column="0" selection-start="141" selection-end="141" vertical-scroll-proportion="0.082417585" vertical-offset="0" max-vertical-offset="546" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Coordinate.java">
+    <entry file="file://$PROJECT_DIR$/src/Seller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="81" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
+        <state line="14" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1515">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -503,16 +558,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/loadFile.java">
+    <entry file="file://$PROJECT_DIR$/src/Coordinate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1410">
+        <state line="15" column="81" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Seller.java">
+    <entry file="file://$PROJECT_DIR$/src/loadFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="29" selection-start="2533" selection-end="2533" vertical-scroll-proportion="-19.444445" vertical-offset="765" max-vertical-offset="1515">
+        <state line="8" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1290">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="119" selection-end="119" vertical-scroll-proportion="0.16509435" vertical-offset="0" max-vertical-offset="1380">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
