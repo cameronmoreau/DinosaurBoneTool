@@ -64,7 +64,7 @@ public class bones {
                     break;
 
                 case 2:
-                    Seller.menu();
+                    //Seller.menu();
                     running = false;
                     break;
             }

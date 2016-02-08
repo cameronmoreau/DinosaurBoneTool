@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac1dfa78-be6e-4db1-bc43-50f600b0cada" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Buyer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Buyer.java" afterPath="$PROJECT_DIR$/src/Buyer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Seller.java" afterPath="$PROJECT_DIR$/src/Seller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bones.java" afterPath="$PROJECT_DIR$/src/bones.java" />
     </list>
     <ignored path="DinosaurBoneTool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,10 +68,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Seller.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Seller.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Seller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
+            <state line="89" column="0" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.713615" vertical-offset="1031" max-vertical-offset="1680">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -112,7 +112,7 @@
       <file leaf-file-name="bones.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="36" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" vertical-offset="699" max-vertical-offset="1380">
+            <state line="66" column="22" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.0" vertical-offset="744" max-vertical-offset="1380">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -121,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Buyer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Buyer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Buyer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.95377505" vertical-offset="86" max-vertical-offset="795">
+            <state line="32" column="26" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -149,8 +149,8 @@
         <option value="$PROJECT_DIR$/src/Coordinate.java" />
         <option value="$PROJECT_DIR$/src/loadFile.java" />
         <option value="$PROJECT_DIR$/src/bones.java" />
-        <option value="$PROJECT_DIR$/src/Seller.java" />
         <option value="$PROJECT_DIR$/src/Buyer.java" />
+        <option value="$PROJECT_DIR$/src/Seller.java" />
       </list>
     </option>
   </component>
@@ -408,12 +408,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7174556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="1.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32988167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -423,7 +424,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7174556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -555,11 +555,19 @@
         <state line="3" column="0" selection-start="141" selection-end="141" vertical-scroll-proportion="0.082417585" vertical-offset="0" max-vertical-offset="546" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/loadFile.java">
+    <entry file="file://$PROJECT_DIR$/Map.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1290">
+        <state line="137" column="6" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="18090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="22" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.0" vertical-offset="744" max-vertical-offset="1380">
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -571,36 +579,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Map.txt">
+    <entry file="file://$PROJECT_DIR$/src/Buyer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="6" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="18090">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="36" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" vertical-offset="699" max-vertical-offset="1380">
+        <state line="32" column="26" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1290">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Seller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Buyer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.95377505" vertical-offset="86" max-vertical-offset="795">
+        <state line="89" column="0" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.713615" vertical-offset="1031" max-vertical-offset="1680">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />

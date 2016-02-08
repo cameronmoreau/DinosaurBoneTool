@@ -30,7 +30,7 @@ public class Buyer {
         }
         switch (choice){
             case 1:
-                System.out.println("Input is 3\n");break;
+                loadMap();break;
             case 2:
                 System.out.println("Input is 2\n");break;
             case 3:
@@ -42,6 +42,28 @@ public class Buyer {
             case 6:
                 System.out.println("Input is 6\n");break;
         }
+    }
+
+    public void loadMap(){
+
+        File mapFile = new File("Map.txt");
+
+        try{
+            Scanner fileIn = new Scanner(mapFile);
+            while(fileIn.hasNext()){
+                String tempLine = fileIn.nextLine();
+                String coordData[] = tempLine.split(",");
+                Coordinate newCoord = new Coordinate(coordData);
+                coordList.add(newCoord);
+            }
+            fileIn.close();
+        }
+        catch (IOException e){
+            System.out.println("File not Found");
+        }
+
+        System.out.println("Map Loaded\n");
+        menu();
     }
 }
 

@@ -92,7 +92,7 @@ public class Seller {
     public static void main(String args[]){
         int BorS;
         Scanner in = new Scanner(System.in);
-        System.out.println("Which tool would you like to use?:\n1.Buyer\n2.Seller");
+        System.out.println("Which tool would you like to use?:\n1.Seller\n2.Buyer");
         BorS = in.nextInt();
         in.nextLine();
         if(BorS==1){
