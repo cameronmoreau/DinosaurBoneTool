@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac1dfa78-be6e-4db1-bc43-50f600b0cada" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bones.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/loadFile.java" afterPath="$PROJECT_DIR$/src/loadFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Buyer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Seller.java" afterPath="$PROJECT_DIR$/src/Seller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DinosaurBoneTool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,7 +71,7 @@
       <file leaf-file-name="Seller.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Seller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1515">
+            <state line="0" column="0" selection-start="0" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -91,7 +92,7 @@
       <file leaf-file-name="Coordinate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Coordinate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="81" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+            <state line="7" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
               <folding />
             </state>
           </provider>
@@ -100,7 +101,7 @@
       <file leaf-file-name="loadFile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/loadFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1290">
+            <state line="8" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -108,10 +109,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bones.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bones.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="25" selection-start="119" selection-end="119" vertical-scroll-proportion="0.16509435" vertical-offset="0" max-vertical-offset="1380">
+            <state line="67" column="36" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" vertical-offset="699" max-vertical-offset="1380">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Buyer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Buyer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="0" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.95377505" vertical-offset="86" max-vertical-offset="795">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -134,9 +147,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/Coordinate.java" />
-        <option value="$PROJECT_DIR$/src/Seller.java" />
         <option value="$PROJECT_DIR$/src/loadFile.java" />
         <option value="$PROJECT_DIR$/src/bones.java" />
+        <option value="$PROJECT_DIR$/src/Seller.java" />
+        <option value="$PROJECT_DIR$/src/Buyer.java" />
       </list>
     </option>
   </component>
@@ -541,13 +555,19 @@
         <state line="3" column="0" selection-start="141" selection-end="141" vertical-scroll-proportion="0.082417585" vertical-offset="0" max-vertical-offset="546" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Seller.java">
+    <entry file="file://$PROJECT_DIR$/src/loadFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1515">
+        <state line="8" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1290">
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -558,25 +578,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Coordinate.java">
+    <entry file="file://$PROJECT_DIR$/src/bones.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="81" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/loadFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1290">
+        <state line="67" column="36" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" vertical-offset="699" max-vertical-offset="1380">
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bones.java">
+    <entry file="file://$PROJECT_DIR$/src/Seller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="119" selection-end="119" vertical-scroll-proportion="0.16509435" vertical-offset="0" max-vertical-offset="1380">
+        <state line="0" column="0" selection-start="0" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Buyer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.95377505" vertical-offset="86" max-vertical-offset="795">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />

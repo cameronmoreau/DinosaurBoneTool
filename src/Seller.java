@@ -90,7 +90,18 @@ public class Seller {
 
 
     public static void main(String args[]){
-        Seller Daniel = new Seller();
-        Daniel.menu();
+        int BorS;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Which tool would you like to use?:\n1.Buyer\n2.Seller");
+        BorS = in.nextInt();
+        in.nextLine();
+        if(BorS==1){
+            Seller Daniel = new Seller();
+            Daniel.menu();
+        }
+        else{
+            Buyer Daniel = new Buyer();
+            Daniel.menu();
+        }
     }
 }
