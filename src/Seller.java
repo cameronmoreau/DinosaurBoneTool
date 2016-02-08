@@ -66,19 +66,25 @@ public class Seller {
     }
 
     public void displayMap(){
-        int sum=0;
-        for(int i=0; i<20;i++){
-            for(int j=0;j<60;j++){
-                Coordinate tempCoord = (Coordinate)coordList.get(sum);
-                int[] coordVals = Coordinate.getVals(tempCoord);
-                if(coordVals[2]==0)
-                    System.out.print(".");
-                else if(coordVals[2]==1)
-                    System.out.print("*");
-                sum+=1;
+        try {
+            int sum=0;
+            for(int i=0; i<20;i++){
+                for(int j=0;j<60;j++){
+                    Coordinate tempCoord = (Coordinate)coordList.get(sum);
+                    int[] coordVals = Coordinate.getVals(tempCoord);
+                    if(coordVals[2]==0)
+                        System.out.print(".");
+                    else if(coordVals[2]==1)
+                        System.out.print("*");
+                    sum+=1;
+                }
+                System.out.println("");
             }
-            System.out.println("");
         }
+        catch(Exception e){
+            System.out.println("Please Load a Map First.\n");
+        }
+        System.out.println("");
         menu();
     }
 
