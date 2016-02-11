@@ -5,15 +5,25 @@
 
 import java.io.*;
 import java.util.ArrayList;
-import static java.util.Collections.list;
-import java.util.Formatter;
 import java.util.Scanner;
 
 
 public class loadFile{
 
 
-    public Boolean load(){
+    static int readCount = 0;
+    //ArrayList list;
+    //File file;
+    bones bone;
+
+
+    public loadFile(){
+        //list = new ArrayList();
+        //bone = new bones();
+    }
+
+
+    public int load(){
 
         //Creates a file object
 
@@ -21,22 +31,34 @@ public class loadFile{
         if(file.exists()){
             readFile(file);
 
+            readCount++;
+
+        }
+
+        return readCount;
+    }
+
+/*    public boolean isLoaded(){
+        //load();
+
+        if (readCount >= 1){
+            System.out.print("File is loaded\n");
+            bone.createBone();
+
         }
 
         else{
-            //Seller.menu();
+            System.out.print("No files found!\n");
         }
 
-        return true;
-    }
+        return false;
+    }*/
 
 
-    public static void readFile(File fileIn){
+    public void readFile(File fileIn){
         //Reads and prints items in file
 
         ArrayList list = new ArrayList();
-
-
 
 
         try{
@@ -59,6 +81,7 @@ public class loadFile{
 
             }
             input.close();
+            System.out.print("Finished loading...\n");
         }
 
         catch(IOException ex){
@@ -67,7 +90,9 @@ public class loadFile{
 
         //System.out.print(list);
         //bones.createBone(list);
-        //return strs;
+        //return list;
+
+
 
     }
 

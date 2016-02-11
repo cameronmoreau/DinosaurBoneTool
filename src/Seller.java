@@ -10,37 +10,58 @@ import java.util.Scanner;
 
 public class Seller {
 
-    Scanner input = new Scanner(System.in);
-    ArrayList coordList = new ArrayList();
+    Scanner input;
+    ArrayList coordList;
+    bones bone;
+    loadFile file;
+
+
+    public Seller(){
+
+        input = new Scanner(System.in);
+        coordList = new ArrayList();
+        bone = new bones();
+        file = new loadFile();
+    }
 
     public void menu(){
         int choice=0;
         Boolean running = true;
-        while(running){
+        while(running) {
             System.out.println("Bone Seller Menu:");
             System.out.println("1.Load Map\n2.Handle a bone\n3.Display Map\n4.Save Files\n5.Load Files\n6.Quit");
 
-            choice =input.nextInt();
-            if(choice<1 || choice>6){
+            choice = input.nextInt();
+            /*if (choice < 1 || choice > 6) {
                 System.out.println("That is not a valid input.\n");
                 continue;
+            }*/
+            //running = false;
+
+            switch (choice) {
+                case 1:
+                    loadMap();
+                    break;
+                case 2:
+                    bone.menu();
+                    break;
+                case 3:
+                    displayMap();
+                    break;
+                case 4:
+                    //Save file
+                    break;
+                case 5:
+                    file.load();
+                    break;
+                case 6:
+                    //Exits
+                    running = false;
+                    break;
             }
-            running = false;
+            continue;
         }
-        switch (choice){
-            case 1:
-                loadMap();break;
-            case 2:
-                System.out.println("Input is 2\n");break;
-            case 3:
-                displayMap();break;
-            case 4:
-                System.out.println("Input is 4\n");break;
-            case 5:
-                System.out.println("Input is 5\n");break;
-            case 6:
-                System.out.println("Input is 6\n");break;
-        }
+
     }
 
     public void loadMap(){
@@ -90,18 +111,7 @@ public class Seller {
 
 
     public static void main(String args[]){
-        int BorS;
-        Scanner in = new Scanner(System.in);
-        System.out.println("Which tool would you like to use?:\n1.Seller\n2.Buyer");
-        BorS = in.nextInt();
-        in.nextLine();
-        if(BorS==1){
-            Seller Daniel = new Seller();
-            Daniel.menu();
-        }
-        else{
-            Buyer Daniel = new Buyer();
-            Daniel.menu();
-        }
+        Seller Daniel = new Seller();
+        Daniel.menu();
     }
 }

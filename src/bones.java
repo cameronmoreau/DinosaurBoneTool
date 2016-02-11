@@ -3,6 +3,7 @@
  *
  */
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.Scanner;
@@ -22,9 +23,13 @@ public class bones {
     float weight;
     String prospector;
 
+    loadFile file;
+    bones bone;
 
+    Formatter out;
+    Scanner in;
 
-    public bones(int age, float price, String condition, int coordX, int coordY, String origin, float length, float width, float height, float weight, String prosector) {
+    public bones() {
 
         this.age = age;
         this.price = price;
@@ -37,11 +42,104 @@ public class bones {
         this.height = height;
         this.weight = weight;
         this.prospector = prospector;
+
+        file = new loadFile();
+
+        out = new Formatter(System.out);
+        in = new Scanner(System.in);
+
+
     }
 
+    public int getAge() {
+        return age;
+    }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-    public static void menu(){
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public String getCondition() {
+        return condition;
+    }
+
+    public void setCondition(String condition) {
+        this.condition = condition;
+    }
+
+    public int getCoordX() {
+        return coordX;
+    }
+
+    public void setCoordX(int coordX) {
+        this.coordX = coordX;
+    }
+
+    public int getCoordY() {
+        return coordY;
+    }
+
+    public void setCoordY(int coordY) {
+        this.coordY = coordY;
+    }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+    public float getLength() {
+        return length;
+    }
+
+    public void setLength(float length) {
+        this.length = length;
+    }
+
+    public float getWidth() {
+        return width;
+    }
+
+    public void setWidth(float width) {
+        this.width = width;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
+    public void setHeight(float height) {
+        this.height = height;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
+    public String getProspector() {
+        return prospector;
+    }
+
+    public void setProspector(String prospector) {
+        this.prospector = prospector;
+    }
+
+    public void menu(){
 
         Boolean running = true;
 
@@ -59,7 +157,7 @@ public class bones {
                 case 1:
                     //Check if loadFile function has been completed
 
-
+                    createBone();
                     running = false;
                     break;
 
@@ -73,12 +171,42 @@ public class bones {
     }
 
 
-    public static ArrayList createBone(ArrayList list){
-        //This will create the bones AFTER a CSV file is loaded
-        //Parse ArrayLists as Objects to constructor?
-        System.out.println("createBone function executed.\n");
+    public boolean isLoaded(){
+        //load();
 
-        return list;
+        if (loadFile.readCount >= 1){
+            System.out.print("File is loaded\n");
+            //createBone();
+        }
+
+        else{
+            System.out.print("No files found!\n");
+        }
+
+        return true;
+    }
+
+
+    public void createBone(){
+        //This will create the bones AFTER a CSV file is loaded
+        //Parse items in ArrayLists as Objects to constructor?
+        //System.out.println("createBone function executed.\n");
+
+        if(isLoaded()){
+            System.out.print("Loaded...");
+
+            //Create bone object here
+            bones bone = new bones();
+            out.format("Enter the age of the bone:");
+            String strAge = in.next();
+            int parsed = Integer.parseInt(strAge);
+            bone.setAge(age);
+        }
+
+        else{
+
+        }
+
 
 
     }
