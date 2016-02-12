@@ -10,30 +10,17 @@ import java.util.*;
 
 public class Seller {
 
-<<<<<<< HEAD
+
     Scanner input = new Scanner(System.in);
     ArrayList coordList = new ArrayList();
     ArrayList boneList = new ArrayList();
-=======
+    
     Formatter out;
     Scanner input;
     ArrayList coordList;
     bones bone;
     loadFile file;
     loadFile list;
-
-    int age;
-    float price;
-    String condition;
-    int coordX;
-    int coordY;
-    String origin;
-    float length;
-    float width;
-    float height;
-    float weight;
-    String prospector;
-
 
     public Seller(){
 
@@ -43,7 +30,7 @@ public class Seller {
         bone = new bones();
         file = new loadFile();
     }
->>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
+
 
     public void menu(){
         int choice=0;
@@ -82,7 +69,6 @@ public class Seller {
             }
             continue;
         }
-<<<<<<< HEAD
         switch (choice){
             case 1:
                 loadMap();break;
@@ -96,7 +82,6 @@ public class Seller {
                 System.out.println("Input is 5\n");break;
             case 6:
                 System.out.println("Input is 6\n");break;
-=======
 
     }
 
@@ -177,7 +162,6 @@ public class Seller {
                     break;
             }
 
->>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
         }
     }
 
