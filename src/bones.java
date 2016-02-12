@@ -3,6 +3,7 @@
  *
  */
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.Scanner;
@@ -22,9 +23,14 @@ public class bones {
     float weight;
     String prospector;
 
+    loadFile file;
+    bones bone;
 
+    Formatter out;
+    Scanner in;
 
     public bones() {
+<<<<<<< HEAD
         Scanner input = new Scanner(System.in);
 
     }
@@ -32,50 +38,120 @@ public class bones {
     public bones create(){
 
 
+=======
+        this.age = age;
+        this.price = price;
+        this.condition = condition;
+        this.coordX = coordX;
+        this.coordY = coordY;
+        this.origin = origin;
+        this.length = length;
+        this.width = width;
+        this.height = height;
+        this.weight = weight;
+        this.prospector = prospector;
+        this.file = file;
+        this.bone = bone;
 
+        in = new Scanner(System.in);
+        out = new Formatter(System.out);
+    }
 
+    public int getAge() {
+        return age;
+    }
+>>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+<<<<<<< HEAD
     }
 
     public static void menu(){
+=======
+    public float getPrice() {
+        return price;
+    }
+>>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
 
-        Boolean running = true;
+    public void setPrice(float price) {
+        this.price = price;
+    }
 
-        while(running){
+    public String getCondition() {
+        return condition;
+    }
 
-            int choice;
+    public void setCondition(String condition) {
+        this.condition = condition;
+    }
 
-            System.out.println("1. Create a dinosaur bone");
-            System.out.println("2. Quit");
+    public int getCoordX() {
+        return coordX;
+    }
 
-            Scanner input = new Scanner(System.in);
-            choice = input.nextInt();
+    public void setCoordX(int coordX) {
+        this.coordX = coordX;
+    }
 
-            switch(choice){
-                case 1:
-                    //Check if loadFile function has been completed
+    public int getCoordY() {
+        return coordY;
+    }
 
+    public void setCoordY(int coordY) {
+        this.coordY = coordY;
+    }
 
-                    running = false;
-                    break;
+    public String getOrigin() {
+        return origin;
+    }
 
-                case 2:
-                    //Seller.menu();
-                    running = false;
-                    break;
-            }
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
 
-        }
+    public float getLength() {
+        return length;
+    }
+
+    public void setLength(float length) {
+        this.length = length;
+    }
+
+    public float getWidth() {
+        return width;
+    }
+
+    public void setWidth(float width) {
+        this.width = width;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
+    public void setHeight(float height) {
+        this.height = height;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
+    public String getProspector() {
+        return prospector;
+    }
+
+    public void setProspector(String prospector) {
+        this.prospector = prospector;
     }
 
 
-    public static ArrayList createBone(ArrayList list){
-        //This will create the bones AFTER a CSV file is loaded
-        //Parse ArrayLists as Objects to constructor?
-        System.out.println("createBone function executed.\n");
-
-        return list;
-
-
-    }
 
 }

@@ -4,30 +4,85 @@
  */
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.*;
 
 
 public class Seller {
 
+<<<<<<< HEAD
     Scanner input = new Scanner(System.in);
     ArrayList coordList = new ArrayList();
     ArrayList boneList = new ArrayList();
+=======
+    Formatter out;
+    Scanner input;
+    ArrayList coordList;
+    bones bone;
+    loadFile file;
+    loadFile list;
+
+    int age;
+    float price;
+    String condition;
+    int coordX;
+    int coordY;
+    String origin;
+    float length;
+    float width;
+    float height;
+    float weight;
+    String prospector;
+
+
+    public Seller(){
+
+        out = new Formatter(System.out);
+        input = new Scanner(System.in);
+        coordList = new ArrayList();
+        bone = new bones();
+        file = new loadFile();
+    }
+>>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
 
     public void menu(){
         int choice=0;
         Boolean running = true;
-        while(running){
+        while(running) {
             System.out.println("Bone Seller Menu:");
             System.out.println("1.Load Map\n2.Handle a bone\n3.Display Map\n4.Save Files\n5.Load Files\n6.Quit");
 
-            choice =input.nextInt();
-            if(choice<1 || choice>6){
+            choice = input.nextInt();
+            /*if (choice < 1 || choice > 6) {
                 System.out.println("That is not a valid input.\n");
                 continue;
+            }*/
+            //running = false;
+
+            switch (choice) {
+                case 1:
+                    loadMap();
+                    break;
+                case 2:
+                    bonesMenu();
+                    break;
+                case 3:
+                    displayMap();
+                    break;
+                case 4:
+                    //Save file
+                    break;
+                case 5:
+                    file.load();
+                    break;
+                case 6:
+                    //Exits
+                    running = false;
+                    break;
             }
-            running = false;
+            continue;
         }
+<<<<<<< HEAD
         switch (choice){
             case 1:
                 loadMap();break;
@@ -41,6 +96,88 @@ public class Seller {
                 System.out.println("Input is 5\n");break;
             case 6:
                 System.out.println("Input is 6\n");break;
+=======
+
+    }
+
+    public boolean isLoaded(){
+        //load();
+
+        if (loadFile.readCount >= 1){
+            //System.out.print("File is loaded\n");
+            //createBone();
+        }
+
+        else{
+            System.out.print("No files found!\n");
+        }
+
+        return true;
+    }
+
+
+    public void createBone(){
+        //This will create the bones AFTER a CSV file is loaded
+        //Parse items in ArrayLists as to constructor?
+        //System.out.println("createBone function executed.\n");
+
+        if(isLoaded()){
+
+            List theList = file.getList();
+            out.format("theList: " + String.valueOf(theList) + "\n");
+
+
+            //System.out.print("Loaded...");
+            out.format("Enter the longitude of the bone:");
+            int lng = input.nextInt();
+            out.format("Enter the latitude of the bone:");
+            int lat = input.nextInt();
+            out.format("Enter the price of the bone:");
+            float p = input.nextFloat();
+            out.format("Enter the identification number:");
+            int id = input.nextInt();
+            
+
+
+        }
+
+        else{
+
+        }
+    }
+
+    public void bonesMenu(){
+
+        Boolean running = true;
+
+        while(running){
+
+            int choice;
+
+            out.format("1. Create a dinosaur bone");
+            out.format("2. View Bones");
+            out.format("3. Quit");
+
+            Scanner input = new Scanner(System.in);
+            choice = input.nextInt();
+
+            switch(choice){
+                case 1:
+                    //Check if loadFile function has been completed
+
+                    createBone();
+                    running = false;
+                    break;
+
+                case 2:
+
+
+                case 3:
+                    running = false;
+                    break;
+            }
+
+>>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
         }
     }
 
@@ -117,18 +254,7 @@ public class Seller {
 
 
     public static void main(String args[]){
-        int BorS;
-        Scanner in = new Scanner(System.in);
-        System.out.println("Which tool would you like to use?:\n1.Seller\n2.Buyer");
-        BorS = in.nextInt();
-        in.nextLine();
-        if(BorS==1){
-            Seller Daniel = new Seller();
-            Daniel.menu();
-        }
-        else{
-            Buyer Daniel = new Buyer();
-            Daniel.menu();
-        }
+        Seller Daniel = new Seller();
+        Daniel.menu();
     }
 }
