@@ -30,15 +30,11 @@ public class bones {
     Scanner in;
 
     public bones() {
-<<<<<<< HEAD
         Scanner input = new Scanner(System.in);
 
     }
 
     public bones create(){
-
-
-=======
         this.age = age;
         this.price = price;
         this.condition = condition;
@@ -60,21 +56,20 @@ public class bones {
     public int getAge() {
         return age;
     }
->>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
+
 
     public void setAge(int age) {
         this.age = age;
     }
 
-<<<<<<< HEAD
     }
 
     public static void menu(){
-=======
+
     public float getPrice() {
         return price;
     }
->>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
+
 
     public void setPrice(float price) {
         this.price = price;
