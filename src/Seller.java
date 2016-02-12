@@ -115,7 +115,7 @@ public class Seller {
             float p = input.nextFloat();
             out.format("Enter the identification number:");
             int id = input.nextInt();
-            
+
 
 
         }
