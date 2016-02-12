@@ -12,13 +12,14 @@ public class loadFile{
 
 
     static int readCount = 0;
-    //ArrayList list;
-    //File file;
+    ArrayList list;
+    File file;
     bones bone;
 
 
     public loadFile(){
-        //list = new ArrayList();
+        list = new ArrayList();
+        file = new File("text.csv");
         //bone = new bones();
     }
 
@@ -27,7 +28,7 @@ public class loadFile{
 
         //Creates a file object
 
-        File file = new File("text.csv");
+        //File file = new File("text.csv");
         if(file.exists()){
             readFile(file);
 
@@ -55,10 +56,10 @@ public class loadFile{
     }*/
 
 
-    public void readFile(File fileIn){
+    public ArrayList readFile(File fileIn){
         //Reads and prints items in file
 
-        ArrayList list = new ArrayList();
+        //ArrayList list = new ArrayList();
 
 
         try{
@@ -89,14 +90,15 @@ public class loadFile{
         }
 
         //System.out.print(list);
-        //bones.createBone(list);
-        //return list;
-
-
+        //createBone(list);
+        return list;
 
     }
 
-
+    public ArrayList getList() {
+        //readFile(file);
+        return list;
+    }
 }
 
 

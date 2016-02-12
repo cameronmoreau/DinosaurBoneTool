@@ -4,20 +4,35 @@
  */
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.*;
 
 
 public class Seller {
 
+    Formatter out;
     Scanner input;
     ArrayList coordList;
     bones bone;
     loadFile file;
+    loadFile list;
+
+    int age;
+    float price;
+    String condition;
+    int coordX;
+    int coordY;
+    String origin;
+    float length;
+    float width;
+    float height;
+    float weight;
+    String prospector;
 
 
     public Seller(){
 
+        out = new Formatter(System.out);
         input = new Scanner(System.in);
         coordList = new ArrayList();
         bone = new bones();
@@ -43,7 +58,7 @@ public class Seller {
                     loadMap();
                     break;
                 case 2:
-                    bone.menu();
+                    bonesMenu();
                     break;
                 case 3:
                     displayMap();
@@ -62,6 +77,86 @@ public class Seller {
             continue;
         }
 
+    }
+
+    public boolean isLoaded(){
+        //load();
+
+        if (loadFile.readCount >= 1){
+            //System.out.print("File is loaded\n");
+            //createBone();
+        }
+
+        else{
+            System.out.print("No files found!\n");
+        }
+
+        return true;
+    }
+
+
+    public void createBone(){
+        //This will create the bones AFTER a CSV file is loaded
+        //Parse items in ArrayLists as to constructor?
+        //System.out.println("createBone function executed.\n");
+
+        if(isLoaded()){
+
+            List theList = file.getList();
+            out.format("theList: " + String.valueOf(theList) + "\n");
+
+
+            //System.out.print("Loaded...");
+            out.format("Enter the longitude of the bone:");
+            int lng = input.nextInt();
+            out.format("Enter the latitude of the bone:");
+            int lat = input.nextInt();
+            out.format("Enter the price of the bone:");
+            float p = input.nextFloat();
+            out.format("Enter the identification number:");
+            int id = input.nextInt();
+            
+
+
+        }
+
+        else{
+
+        }
+    }
+
+    public void bonesMenu(){
+
+        Boolean running = true;
+
+        while(running){
+
+            int choice;
+
+            out.format("1. Create a dinosaur bone");
+            out.format("2. View Bones");
+            out.format("3. Quit");
+
+            Scanner input = new Scanner(System.in);
+            choice = input.nextInt();
+
+            switch(choice){
+                case 1:
+                    //Check if loadFile function has been completed
+
+                    createBone();
+                    running = false;
+                    break;
+
+                case 2:
+
+
+                case 3:
+                    running = false;
+                    break;
+            }
+
+        }
     }
 
     public void loadMap(){

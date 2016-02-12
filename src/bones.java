@@ -30,7 +30,6 @@ public class bones {
     Scanner in;
 
     public bones() {
-
         this.age = age;
         this.price = price;
         this.condition = condition;
@@ -42,13 +41,11 @@ public class bones {
         this.height = height;
         this.weight = weight;
         this.prospector = prospector;
+        this.file = file;
+        this.bone = bone;
 
-        file = new loadFile();
-
-        out = new Formatter(System.out);
         in = new Scanner(System.in);
-
-
+        out = new Formatter(System.out);
     }
 
     public int getAge() {
@@ -139,76 +136,6 @@ public class bones {
         this.prospector = prospector;
     }
 
-    public void menu(){
 
-        Boolean running = true;
-
-        while(running){
-
-            int choice;
-
-            System.out.println("1. Create a dinosaur bone");
-            System.out.println("2. Quit");
-
-            Scanner input = new Scanner(System.in);
-            choice = input.nextInt();
-
-            switch(choice){
-                case 1:
-                    //Check if loadFile function has been completed
-
-                    createBone();
-                    running = false;
-                    break;
-
-                case 2:
-                    //Seller.menu();
-                    running = false;
-                    break;
-            }
-
-        }
-    }
-
-
-    public boolean isLoaded(){
-        //load();
-
-        if (loadFile.readCount >= 1){
-            System.out.print("File is loaded\n");
-            //createBone();
-        }
-
-        else{
-            System.out.print("No files found!\n");
-        }
-
-        return true;
-    }
-
-
-    public void createBone(){
-        //This will create the bones AFTER a CSV file is loaded
-        //Parse items in ArrayLists as Objects to constructor?
-        //System.out.println("createBone function executed.\n");
-
-        if(isLoaded()){
-            System.out.print("Loaded...");
-
-            //Create bone object here
-            bones bone = new bones();
-            out.format("Enter the age of the bone:");
-            String strAge = in.next();
-            int parsed = Integer.parseInt(strAge);
-            bone.setAge(age);
-        }
-
-        else{
-
-        }
-
-
-
-    }
 
 }
