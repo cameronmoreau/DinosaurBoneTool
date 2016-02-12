@@ -24,22 +24,17 @@ public class bones {
 
 
 
-    public bones(int age, float price, String condition, int coordX, int coordY, String origin, float length, float width, float height, float weight, String prosector) {
+    public bones() {
+        Scanner input = new Scanner(System.in);
 
-        this.age = age;
-        this.price = price;
-        this.condition = condition;
-        this.coordX = coordX;
-        this.coordY = coordY;
-        this.origin = origin;
-        this.length = length;
-        this.width = width;
-        this.height = height;
-        this.weight = weight;
-        this.prospector = prospector;
     }
 
+    public bones create(){
 
+
+
+
+    }
 
     public static void menu(){
 

@@ -12,6 +12,7 @@ public class Seller {
 
     Scanner input = new Scanner(System.in);
     ArrayList coordList = new ArrayList();
+    ArrayList boneList = new ArrayList();
 
     public void menu(){
         int choice=0;
@@ -31,7 +32,7 @@ public class Seller {
             case 1:
                 loadMap();break;
             case 2:
-                System.out.println("Input is 2\n");break;
+                handleBone();break;
             case 3:
                 displayMap();break;
             case 4:
@@ -63,6 +64,32 @@ public class Seller {
 
         System.out.println("Map Loaded\n");
         menu();
+    }
+
+    public void handleBone(){
+        int choice=0;
+        while(choice != 4){
+            System.out.println("Would you like to:\n1.Create a bone\n2.Update a bone\n3.Remove a bone\n4.Quit to main menu");
+            choice = input.nextInt();
+
+            if(choice == 1){
+                bones newBone = new bones();
+                newBone.create();
+                boneList.add(newBone);
+            }
+
+            if(choice == 2){
+
+
+            }
+
+            if(choice == 3){
+
+
+            }
+
+        }
+
     }
 
     public void displayMap(){
