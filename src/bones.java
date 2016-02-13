@@ -60,4 +60,5 @@ public class bones {
         System.out.print("\nEnter the new Price: $");
         price = input.nextFloat();
     }
+
 }

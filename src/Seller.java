@@ -14,21 +14,16 @@ public class Seller {
     ArrayList coordList;
     ArrayList boneList;
 
-    Formatter out;
-    bones bone;
     loadFile file;
     loadFile list;
 
     public Seller(){
 
-        out = new Formatter(System.out);
         input = new Scanner(System.in);
         coordList = new ArrayList();
         boneList = new ArrayList();
-        bone = new bones();
         file = new loadFile();
     }
-
     public void menu(){
         int choice=0;
         Boolean running = true;
@@ -41,9 +36,10 @@ public class Seller {
                 System.out.println("That is not a valid input.\n");
                 continue;
             }
+
             running = false;
-         }
-        switch (choice) {
+        }
+        switch (choice){
             case 1:
                 loadMap();break;
             case 2:
@@ -73,26 +69,6 @@ public class Seller {
 
         return true;
     }
-
-
-    public void createBone(){
-        //This will create the bones AFTER a CSV file is loaded
-        //Parse items in ArrayLists as to constructor?
-        //System.out.println("createBone function executed.\n");
-
-        if(isLoaded()){
-
-            List theList = file.getList();
-            out.format("theList: " + String.valueOf(theList) + "\n");
-
-
-        }
-
-        else{
-
-        }
-    }
-
     public void loadMap(){
 
         File mapFile = new File("Map.txt");
@@ -136,7 +112,8 @@ public class Seller {
 
 
             }
-
+            else
+                menu();
         }
 
     }
