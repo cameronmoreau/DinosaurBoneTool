@@ -3,155 +3,61 @@
  *
  */
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Formatter;
 import java.util.Scanner;
 
 
 public class bones {
 
-    int age;
-    float price;
-    String condition;
-    int coordX;
-    int coordY;
-    String origin;
-    float length;
-    float width;
-    float height;
-    float weight;
-    String prospector;
-
-    loadFile file;
-    bones bone;
-
-    Formatter out;
-    Scanner in;
+    int age, mapX, mapY, id;
+    float price, length, width, height, weight, latitude, longitude;
+    String condition, origin, prospector;
+    Scanner input;
 
     public bones() {
-<<<<<<< HEAD
-        Scanner input = new Scanner(System.in);
+        input = new Scanner(System.in);
 
     }
 
-    public bones create(){
+    public void create(){
+        try{
+            System.out.print("Enter the:\nLongitude of the bone: ");
+            longitude = input.nextFloat();
+            System.out.print("Latitude of the bone: ");
+            latitude = input.nextFloat();
+            System.out.print("Price of the bone: $");
+            price = input.nextFloat();
+            System.out.print("Identification number: ");
+            id = input.nextInt();
+            System.out.print("Age: ");
+            age = input.nextInt();
+            System.out.print("Dimensions of the bone with a space between each entry(length width height): ");
+            length = input.nextFloat();
+            width = input.nextFloat();
+            height = input.nextFloat();
+            System.out.print("Weight of the bone in kilograms: ");
+            weight = input.nextFloat();
+            System.out.print("Condition (Poor, Fair, Good, Excellent): ");
+            condition = input.next();
+            System.out.print("Country of Origin: ");
+            origin = input.next();
+            System.out.print("Prospector: ");
+            prospector = input.next();
+        }
+        catch(Exception e){
+            System.out.println("An error has occurred when submitting your bone.");
+            System.out.println("Please try again");
+            create();
+        }
 
-
-=======
-        this.age = age;
-        this.price = price;
-        this.condition = condition;
-        this.coordX = coordX;
-        this.coordY = coordY;
-        this.origin = origin;
-        this.length = length;
-        this.width = width;
-        this.height = height;
-        this.weight = weight;
-        this.prospector = prospector;
-        this.file = file;
-        this.bone = bone;
-
-        in = new Scanner(System.in);
-        out = new Formatter(System.out);
+        //mapX = Coordinate
     }
 
-    public int getAge() {
-        return age;
+    public void update(){
+        System.out.print("Enter the new Latitude: ");
+        latitude = input.nextFloat();
+        System.out.print("\nEnter the new Longitude:");
+        longitude = input.nextFloat();
+        System.out.print("\nEnter the new Price: $");
+        price = input.nextFloat();
     }
->>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-<<<<<<< HEAD
-    }
-
-    public static void menu(){
-=======
-    public float getPrice() {
-        return price;
-    }
->>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
-    public String getCondition() {
-        return condition;
-    }
-
-    public void setCondition(String condition) {
-        this.condition = condition;
-    }
-
-    public int getCoordX() {
-        return coordX;
-    }
-
-    public void setCoordX(int coordX) {
-        this.coordX = coordX;
-    }
-
-    public int getCoordY() {
-        return coordY;
-    }
-
-    public void setCoordY(int coordY) {
-        this.coordY = coordY;
-    }
-
-    public String getOrigin() {
-        return origin;
-    }
-
-    public void setOrigin(String origin) {
-        this.origin = origin;
-    }
-
-    public float getLength() {
-        return length;
-    }
-
-    public void setLength(float length) {
-        this.length = length;
-    }
-
-    public float getWidth() {
-        return width;
-    }
-
-    public void setWidth(float width) {
-        this.width = width;
-    }
-
-    public float getHeight() {
-        return height;
-    }
-
-    public void setHeight(float height) {
-        this.height = height;
-    }
-
-    public float getWeight() {
-        return weight;
-    }
-
-    public void setWeight(float weight) {
-        this.weight = weight;
-    }
-
-    public String getProspector() {
-        return prospector;
-    }
-
-    public void setProspector(String prospector) {
-        this.prospector = prospector;
-    }
-
-
-
 }

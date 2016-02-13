@@ -10,80 +10,40 @@ import java.util.*;
 
 public class Seller {
 
-<<<<<<< HEAD
-    Scanner input = new Scanner(System.in);
-    ArrayList coordList = new ArrayList();
-    ArrayList boneList = new ArrayList();
-=======
-    Formatter out;
     Scanner input;
     ArrayList coordList;
+    ArrayList boneList;
+
+    Formatter out;
     bones bone;
     loadFile file;
     loadFile list;
-
-    int age;
-    float price;
-    String condition;
-    int coordX;
-    int coordY;
-    String origin;
-    float length;
-    float width;
-    float height;
-    float weight;
-    String prospector;
-
 
     public Seller(){
 
         out = new Formatter(System.out);
         input = new Scanner(System.in);
         coordList = new ArrayList();
+        boneList = new ArrayList();
         bone = new bones();
         file = new loadFile();
     }
->>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
 
     public void menu(){
         int choice=0;
         Boolean running = true;
         while(running) {
             System.out.println("Bone Seller Menu:");
-            System.out.println("1.Load Map\n2.Handle a bone\n3.Display Map\n4.Save Files\n5.Load Files\n6.Quit");
+            System.out.println("1. Load Map\n2. Handle a bone\n3. Display Map\n4. Save Files\n5. Load Files\n6. Quit");
 
             choice = input.nextInt();
-            /*if (choice < 1 || choice > 6) {
+            if (choice < 1 || choice > 6) {
                 System.out.println("That is not a valid input.\n");
                 continue;
-            }*/
-            //running = false;
-
-            switch (choice) {
-                case 1:
-                    loadMap();
-                    break;
-                case 2:
-                    bonesMenu();
-                    break;
-                case 3:
-                    displayMap();
-                    break;
-                case 4:
-                    //Save file
-                    break;
-                case 5:
-                    file.load();
-                    break;
-                case 6:
-                    //Exits
-                    running = false;
-                    break;
             }
-            continue;
-        }
-<<<<<<< HEAD
-        switch (choice){
+            running = false;
+         }
+        switch (choice) {
             case 1:
                 loadMap();break;
             case 2:
@@ -91,13 +51,12 @@ public class Seller {
             case 3:
                 displayMap();break;
             case 4:
-                System.out.println("Input is 4\n");break;
+                break;
             case 5:
-                System.out.println("Input is 5\n");break;
+                file.load();break;
             case 6:
-                System.out.println("Input is 6\n");break;
-=======
-
+                break;
+        }
     }
 
     public boolean isLoaded(){
@@ -127,57 +86,10 @@ public class Seller {
             out.format("theList: " + String.valueOf(theList) + "\n");
 
 
-            //System.out.print("Loaded...");
-            out.format("Enter the longitude of the bone:");
-            int lng = input.nextInt();
-            out.format("Enter the latitude of the bone:");
-            int lat = input.nextInt();
-            out.format("Enter the price of the bone:");
-            float p = input.nextFloat();
-            out.format("Enter the identification number:");
-            int id = input.nextInt();
-            
-
-
         }
 
         else{
 
-        }
-    }
-
-    public void bonesMenu(){
-
-        Boolean running = true;
-
-        while(running){
-
-            int choice;
-
-            out.format("1. Create a dinosaur bone");
-            out.format("2. View Bones");
-            out.format("3. Quit");
-
-            Scanner input = new Scanner(System.in);
-            choice = input.nextInt();
-
-            switch(choice){
-                case 1:
-                    //Check if loadFile function has been completed
-
-                    createBone();
-                    running = false;
-                    break;
-
-                case 2:
-
-
-                case 3:
-                    running = false;
-                    break;
-            }
-
->>>>>>> b71773d4aecf6c78446f84f3dfdb5adaa6266659
         }
     }
 

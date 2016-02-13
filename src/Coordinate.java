@@ -3,8 +3,7 @@
  */
 public class Coordinate {
     int longitudeMap, latitudeMap, landOrWaterMap;
-    double longitudeGlobe, latitudeGlobe, landOrWaterGlobe;
-    String mapType, globe;
+    double longitudeGlobe, latitudeGlobe;
 
     public Coordinate(String newCoordData []){
         longitudeMap = Integer.parseInt(newCoordData[0]);
