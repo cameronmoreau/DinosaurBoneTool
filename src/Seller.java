@@ -104,17 +104,25 @@ public class Seller {
             }
 
             if(choice == 2){
-
-
+                int id,i;
+                System.out.print("Enter the ID of the bone: ");
+                id = input.nextInt();
+                for(i=0;i<boneList.size();i++){
+                    bones tempBone = (bones)boneList.get(i);
+                    if(tempBone.getID() != id)
+                        continue;
+                    tempBone.update();
+                    boneList.set(i,tempBone);
+                    break;
+                }
             }
 
             if(choice == 3){
 
 
             }
-            else
-                menu();
         }
+        menu();
 
     }
 

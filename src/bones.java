@@ -55,10 +55,13 @@ public class bones {
     public void update(){
         System.out.print("Enter the new Latitude: ");
         latitude = input.nextFloat();
-        System.out.print("\nEnter the new Longitude:");
+        System.out.print("Enter the new Longitude:");
         longitude = input.nextFloat();
-        System.out.print("\nEnter the new Price: $");
+        System.out.print("Enter the new Price: $");
         price = input.nextFloat();
     }
 
+    public int getID(){
+        return id;
+    }
 }
