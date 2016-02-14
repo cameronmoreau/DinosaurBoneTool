@@ -4,7 +4,6 @@
  */
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.*;
 
 
@@ -12,17 +11,22 @@ public class Seller {
 
     Scanner input;
     ArrayList coordList;
-    ArrayList boneList;
+    ArrayList<Bones> boneList;
 
-    loadFile file;
-    loadFile list;
+    LoadFile file;
+    LoadFile list;
+
+    /**
+     * If i want to see if bones are loaded,
+     * Check if boneList == null
+     * */
 
     public Seller(){
 
         input = new Scanner(System.in);
         coordList = new ArrayList();
-        boneList = new ArrayList();
-        file = new loadFile();
+        boneList = new ArrayList<>();
+        file = new LoadFile("text.csv");
     }
     public void menu(){
         int choice=0;
@@ -34,37 +38,48 @@ public class Seller {
             choice = input.nextInt();
             if (choice < 1 || choice > 6) {
                 System.out.println("That is not a valid input.\n");
-                continue;
             }
 
-            running = false;
-        }
-        switch (choice){
-            case 1:
-                loadMap();break;
-            case 2:
-                handleBone();break;
-            case 3:
-                displayMap();break;
-            case 4:
-                break;
-            case 5:
-                file.load();break;
-            case 6:
-                break;
+            switch (choice){
+                case 1:
+                    loadMap();break;
+                case 2:
+                    handleBone();break;
+                case 3:
+                    displayMap();break;
+                case 4:
+                    break;
+                case 5:
+                    boneList.addAll(file.loadBones());
+                    for(Bones b : boneList) {
+                        System.out.println(b.toString());
+                    }
+                    break;
+                case 6:
+                    running = false;
+                    break;
+            }
         }
     }
 
     public boolean isLoaded(){
         //load();
 
-        if (loadFile.readCount >= 1){
-            //System.out.print("File is loaded\n");
-            //createBone();
+
+        //File not loaded
+        if (boneList == null){
+            System.out.print("No files found!\n");
+            return false;
         }
 
+        else if(boneList.size() == 0) {
+            System.out.print("File is loaded but empty\n");
+        }
+
+
+        //File loaded
         else{
-            System.out.print("No files found!\n");
+            System.out.print("File is loaded\n");
         }
 
         return true;
@@ -99,7 +114,7 @@ public class Seller {
             choice = input.nextInt();
 
             if(choice == 1){
-                bones newBone = new bones();
+                Bones newBone = new Bones();
                 newBone.create();
                 boneList.add(newBone);
             }
@@ -109,7 +124,7 @@ public class Seller {
                 System.out.print("Enter the ID of the bone: ");
                 id = input.nextInt();
                 for(i=0;i<boneList.size();i++){
-                    bones tempBone = (bones)boneList.get(i);
+                    Bones tempBone = (Bones)boneList.get(i);
                     if(tempBone.getID() != id)
                         continue;
                     tempBone.update();
@@ -123,7 +138,7 @@ public class Seller {
                 System.out.print("Enter the ID of the bone: ");
                 id = input.nextInt();
                 for(i=0;i<boneList.size();i++){
-                    bones tempBone = (bones)boneList.get(i);
+                    Bones tempBone = (Bones)boneList.get(i);
                     if(tempBone.getID() != id)
                         continue;
                     boneList.remove(i);

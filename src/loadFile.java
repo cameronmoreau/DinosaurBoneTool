@@ -5,26 +5,55 @@
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 
-public class loadFile{
+public class LoadFile {
+
+    Scanner fileContents;
 
 
-    static int readCount = 0;
-    ArrayList list;
-    File file;
-    bones bone;
+    public LoadFile(String s){
+        try {
+            fileContents = new Scanner(new FileReader(s));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /* Right */
+
+    /**
+     * Regex Solution for CSV file split
+     * with commas by Achintya Jha
+     * http://stackoverflow.com/a/15739087/4151253
+     * */
+    public ArrayList<Bones> loadBones() {
+        System.out.println("Trying to load bones");
+        ArrayList<Bones> tempBones = new ArrayList<>();
 
 
-    public loadFile(){
-        list = new ArrayList();
-        file = new File("text.csv");
-        //bone = new bones();
+        //Load entire file line by line
+        while(fileContents.hasNextLine()) {
+            String line = fileContents.nextLine();
+            String[] parsed = line.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
+
+            if(parsed.length == 11) {
+                Bones bone = new Bones(parsed);
+                tempBones.add(bone);
+            }
+        }
+
+        return tempBones;
     }
 
 
-    public int load(){
+
+    /* Wrong */
+
+
+    /*public int load(){
 
         //Creates a file object
 
@@ -39,7 +68,7 @@ public class loadFile{
         return readCount;
     }
 
-/*    public boolean isLoaded(){
+*//*    public boolean isLoaded(){
         //load();
 
         if (readCount >= 1){
@@ -53,7 +82,7 @@ public class loadFile{
         }
 
         return false;
-    }*/
+    }*//*
 
 
     public ArrayList readFile(File fileIn){
@@ -67,7 +96,7 @@ public class loadFile{
             //input.useDelimiter(",");
 
             while(input.hasNext()){
-                //bones bone = new bones(input.nextLine());
+                //Bones bone = new Bones(input.nextLine());
                 if(input.hasNextInt()){
                     list.add(input.nextInt());
                 }
@@ -98,7 +127,7 @@ public class loadFile{
     public ArrayList getList() {
         //readFile(file);
         return list;
-    }
+    }*/
 }
 
 
