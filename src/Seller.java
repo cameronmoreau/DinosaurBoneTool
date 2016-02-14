@@ -78,7 +78,8 @@ public class Seller {
             while(fileIn.hasNext()){
                 String tempLine = fileIn.nextLine();
                 String coordData[] = tempLine.split(",");
-                Coordinate newCoord = new Coordinate(coordData);
+                Coordinate newCoord = new Coordinate();
+                newCoord.loadMap(coordData);
                 coordList.add(newCoord);
             }
             fileIn.close();
@@ -118,8 +119,16 @@ public class Seller {
             }
 
             if(choice == 3){
-
-
+                int id,i;
+                System.out.print("Enter the ID of the bone: ");
+                id = input.nextInt();
+                for(i=0;i<boneList.size();i++){
+                    bones tempBone = (bones)boneList.get(i);
+                    if(tempBone.getID() != id)
+                        continue;
+                    boneList.remove(i);
+                    break;
+                }
             }
         }
         menu();

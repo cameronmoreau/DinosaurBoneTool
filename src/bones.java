@@ -49,7 +49,7 @@ public class bones {
             create();
         }
 
-        //mapX = Coordinate
+        //mapX = Coordinate.();
     }
 
     public void update(){
